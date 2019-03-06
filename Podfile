@@ -6,5 +6,6 @@ use_frameworks!
 target 'ManToMan' do
 pod ‘ApiAI’
 pod ‘JSQMessagesViewController’
+pod 'Firebase/Core'
 
 end

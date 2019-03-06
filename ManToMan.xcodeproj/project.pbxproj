@@ -42,6 +42,7 @@
 		54FB8D2421D3638200D9DB07 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB8D2321D3638200D9DB07 /* AgeViewController.swift */; };
 		54FB8D2621D4C83200D9DB07 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB8D2521D4C83200D9DB07 /* CityTableViewCell.swift */; };
 		696B4B9BF89B37D7ED385E6E /* Pods_ManToMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707ED920EC84B5DD53901CEF /* Pods_ManToMan.framework */; };
+		819C938A222E58C5008AFB32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 819C9389222E58C5008AFB32 /* GoogleService-Info.plist */; };
 		8403A7DA222E0DAB0034E52A /* Jobs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8403A7D8222E0DAB0034E52A /* Jobs.storyboard */; };
 		988C3BBC21D078D6006FCE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C3BBB21D078D6006FCE2C /* AppDelegate.swift */; };
 		988C3BC121D078D6006FCE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988C3BBF21D078D6006FCE2C /* Main.storyboard */; };
@@ -89,6 +90,7 @@
 		54FB8D2321D3638200D9DB07 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
 		54FB8D2521D4C83200D9DB07 /* CityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		707ED920EC84B5DD53901CEF /* Pods_ManToMan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManToMan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		819C9389222E58C5008AFB32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8403A7D9222E0DAB0034E52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Jobs.storyboard; sourceTree = "<group>"; };
 		988C3BB821D078D6006FCE2C /* ManToMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManToMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988C3BBB21D078D6006FCE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				5453490221F6CAB50051DD29 /* File.swift */,
 				988C3BC721D078D7006FCE2C /* Info.plist */,
 				54FB8D1121D22DBF00D9DB07 /* Districts.plist */,
+				819C9389222E58C5008AFB32 /* GoogleService-Info.plist */,
 			);
 			path = ManToMan;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819C938A222E58C5008AFB32 /* GoogleService-Info.plist in Resources */,
 				5489B20A21E73A4400199277 /* Pods in Resources */,
 				988C3BC621D078D7006FCE2C /* LaunchScreen.storyboard in Resources */,
 				8403A7DA222E0DAB0034E52A /* Jobs.storyboard in Resources */,
@@ -349,20 +353,24 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ManToMan/Pods-ManToMan-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ManToMan/Pods-ManToMan-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ManToMan/Pods-ManToMan-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ManToMan/Pods-ManToMan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB49CB0E1EF753A15AE8895F /* [CP] Check Pods Manifest.lock */ = {
@@ -574,7 +582,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5HJWP2XUD;
 				INFOPLIST_FILE = ManToMan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,7 +604,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5HJWP2XUD;
 				INFOPLIST_FILE = ManToMan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

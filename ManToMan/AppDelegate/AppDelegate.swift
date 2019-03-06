@@ -8,6 +8,7 @@
 
 import UIKit
 import ApiAI
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         apiai?.configuration = configuration
         
         UIApplication.shared.statusBarStyle = .lightContent
+        
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
         
         return true
     }
